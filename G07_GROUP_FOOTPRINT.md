@@ -209,7 +209,6 @@ Sản phẩm xử lý input của người chơi theo một quy trình lặp qua
 <!-- -->
 
 - **2. Kiểm tra và xử lý giao dịch**
-
 <!-- -->
 
   **Nếu người chơi chọn Buy, hệ thống dùng một phần cash để mua cổ phiếu**:
@@ -226,7 +225,6 @@ Sản phẩm xử lý input của người chơi theo một quy trình lặp qua
 **Nếu người chơi bán toàn bộ vị thế,** hệ thống đặt shares_sold = shares_before và đưa avg_cost = 0.0 để tránh lỗi tính toán ở các round sau.
 
 **Nếu người chơi chọn **Hold****, hệ thống không thay đổi cash và shares.
-
 <!-- -->
 
 - **3. Cập nhật danh mục đầu tư**
@@ -235,13 +233,13 @@ Sản phẩm xử lý input của người chơi theo một quy trình lặp qua
 
 - Sau khi xử lý giao dịch, hệ thống cập nhật các biến chính như: **cash, shares, avg_cost, portfolio_value, round_return, total_return và unrealized_return**.
 
-- **Giá trị danh mục được tính bằng:**  
+  **Giá trị danh mục được tính bằng:**  
     portfolio_value = cash_after + (shares_after × price_now)
 
-- **Tổng lợi nhuận được tính bằng:** 
+  **Tổng lợi nhuận được tính bằng:** 
     total_return = (portfolio_value - initial_capital) / initial_capital
   
-- **Lợi nhuận của vị thế cổ phiếu đang nắm giữ được tính bằng:**
+  **Lợi nhuận của vị thế cổ phiếu đang nắm giữ được tính bằng:**
     unrealized_return = (price_now - avg_cost_before) / avg_cost_before
 
 <!-- -->
