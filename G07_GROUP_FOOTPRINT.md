@@ -42,11 +42,9 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Game cho người chơi đầu tư vào một cổ phiếu giả lập tên là **STEELSTOX**.
-
-- Người chơi bắt đầu với tài khoản ảo **100,000 USD**.
-
-- Mục tiêu không chỉ là tạo lợi nhuận, mà còn giúp người chơi hiểu cách mình ra quyết định trong từng tình huống thị trường.
+    + Game cho người chơi đầu tư vào một cổ phiếu giả lập tên là **STEELSTOX**.
+    + Người chơi bắt đầu với tài khoản ảo **100,000 USD**.
+    +Mục tiêu không chỉ là tạo lợi nhuận, mà còn giúp người chơi hiểu cách mình ra quyết định trong từng tình huống thị trường.
 
 <!-- -->
 
