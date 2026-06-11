@@ -658,7 +658,7 @@ Nhờ phần giao diện và trực quan hóa này, sản phẩm trở nên hoà
 
 ### Bằng chứng đóng góp
 
-2312380038 - Nguyễn Hạnh Trang - Contribution Evidence
+2312380038 - Nguyễn Hạnh Trang - Contribution Evidence: https://drive.google.com/drive/folders/1bFzRZowDS6yuRUQtynvINHIhxCPtzi_m?fbclid=IwY2xjawSXjr9leHRuA2FlbQIxMABicmlkETE3dWxmVndDb3RrMTlHSDdXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpGLCU6avAiLdY8WX_gaZhvG2Gc60QHd8Ua7Zanb_f-OjKpjCAh6dV2VttTq_aem_06XVxUuXiGUDAvoFAqpPEA
 
 ### Phần đóng góp đó kết nối thế nào với sản phẩm cuối cùng
 
