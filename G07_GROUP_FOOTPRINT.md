@@ -44,7 +44,7 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
     + Game cho người chơi đầu tư vào một cổ phiếu giả lập tên là **STEELSTOX**.
     + Người chơi bắt đầu với tài khoản ảo **100,000 USD**.
-    +Mục tiêu không chỉ là tạo lợi nhuận, mà còn giúp người chơi hiểu cách mình ra quyết định trong từng tình huống thị trường.
+    + Mục tiêu không chỉ là tạo lợi nhuận, mà còn giúp người chơi hiểu cách mình ra quyết định trong từng tình huống thị trường.
 
 <!-- -->
 
@@ -52,9 +52,9 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Mỗi round có một scenario mô tả bối cảnh thị trường, giá cổ phiếu, tín hiệu liên quan và thông tin đám đông.
+    + Mỗi round có một scenario mô tả bối cảnh thị trường, giá cổ phiếu, tín hiệu liên quan và thông tin đám đông.
 
-- Các scenario được thiết kế để tạo ra tình huống đầu tư có thể ảnh hưởng đến tâm lý và hành vi của người chơi.
+    + Các scenario được thiết kế để tạo ra tình huống đầu tư có thể ảnh hưởng đến tâm lý và hành vi của người chơi.
 
 <!-- -->
 
@@ -62,9 +62,9 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Các scenario rounds không xuất hiện theo một thứ tự cố định.
+    + Các scenario rounds không xuất hiện theo một thứ tự cố định.
 
-- Ở mỗi lượt chơi, hệ thống sẽ trộn thứ tự các rounds để tạo trải nghiệm khác nhau.
+    + Ở mỗi lượt chơi, hệ thống sẽ trộn thứ tự các rounds để tạo trải nghiệm khác nhau.
 
 <!-- -->
 
@@ -72,9 +72,9 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Ở mỗi round, người chơi chọn một trong ba hành động: **Buy, Sell hoặc Hold.**
+    + Ở mỗi round, người chơi chọn một trong ba hành động: **Buy, Sell hoặc Hold.**
 
-- Nếu chọn Buy hoặc Sell, người chơi nhập **trade size** để xác định mức độ giao dịch.
+    + Nếu chọn Buy hoặc Sell, người chơi nhập **trade size** để xác định mức độ giao dịch.
 
 <!-- -->
 
@@ -82,9 +82,9 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Sau mỗi round, game hiển thị 3 câu hỏi liên quan đến scenario
+    + Sau mỗi round, game hiển thị 3 câu hỏi liên quan đến scenario
 
-- Phần này giúp xác nhận người chơi đã thực sự đọc qua scenario.
+    + Phần này giúp xác nhận người chơi đã thực sự đọc qua scenario.
 
 <!-- -->
 
@@ -92,11 +92,11 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Hệ thống xử lý giao dịch dựa trên số tiền mặt hiện có, số cổ phiếu đang nắm giữ và giá cổ phiếu hiện tại.
+    + Hệ thống xử lý giao dịch dựa trên số tiền mặt hiện có, số cổ phiếu đang nắm giữ và giá cổ phiếu hiện tại.
 
-- Giao dịch được thực hiện theo **số cổ phiếu nguyên và làm tròn xuống**, thay vì cho phép mua bán cổ phiếu thập phân.
+    + Giao dịch được thực hiện theo **số cổ phiếu nguyên và làm tròn xuống**, thay vì cho phép mua bán cổ phiếu thập phân.
 
-- Sau mỗi quyết định, hệ thống cập nhật các chỉ số chính như: *cash, shares, portfolio value, round return, total return.*
+    + Sau mỗi quyết định, hệ thống cập nhật các chỉ số chính như: *cash, shares, portfolio value, round return, total return.*
 
 <!-- -->
 
@@ -104,11 +104,11 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Ngoài kết quả tài chính, game còn phân tích quyết định của người chơi để phát hiện các bias hành vi.
+    + Ngoài kết quả tài chính, game còn phân tích quyết định của người chơi để phát hiện các bias hành vi.
 
-- Hệ thống sử dụng decision, trade size, trạng thái danh mục, bối cảnh scenario và decision history để ghi nhận bias.
+    + Hệ thống sử dụng decision, trade size, trạng thái danh mục, bối cảnh scenario và decision history để ghi nhận bias.
 
-- Các bias được xét gồm: ***loss aversion, Disposition effect, herding, overconfidence, Framing bias, Availability bias***
+    + Các bias được xét gồm: ***loss aversion, Disposition effect, herding, overconfidence, Framing bias, Availability bias***
 
 <!-- -->
 
@@ -116,21 +116,21 @@ Sản phẩm hiện tại đã làm được các chức năng chính sau:
 
 <!-- -->
 
-- Khi hoàn thành các rounds, người chơi nhận được bảng kết quả cuối cùng.
+    + Khi hoàn thành các rounds, người chơi nhận được bảng kết quả cuối cùng.
 
-- Final dashboard hiển thị:
+    + Final dashboard hiển thị:
 
-  - kết quả danh mục;
+        kết quả danh mục;
 
-  - tổng lợi nhuận;
+        tổng lợi nhuận;
 
-  - bias summary;
+        bias summary;
 
-  - score;
+        score;
 
-  - feedback ngắn.
+        feedback ngắn.
 
-- Phần này giúp người chơi không chỉ biết mình lời hay lỗ, mà còn hiểu rõ hơn về hành vi đầu tư của mình trong quá trình chơi.
+    + Phần này giúp người chơi không chỉ biết mình lời hay lỗ, mà còn hiểu rõ hơn về hành vi đầu tư của mình trong quá trình chơi.
 
 ## **Input** 
 
@@ -140,9 +140,9 @@ Sản phẩm tiếp nhận các input chính từ người chơi trong quá trì
 
 <!-- -->
 
-- Người chơi nhập tên khi bắt đầu game.
+    + Người chơi nhập tên khi bắt đầu game.
 
-- Thông tin này được dùng để ghi nhận kết quả và hiển thị trên leaderboard nếu cần.
+    + Thông tin này được dùng để ghi nhận kết quả và hiển thị trên leaderboard nếu cần.
 
 <!-- -->
 
@@ -150,15 +150,14 @@ Sản phẩm tiếp nhận các input chính từ người chơi trong quá trì
 
 <!-- -->
 
-- Sau khi đọc scenario và xem thông tin thị trường, người chơi chọn một trong ba hành động:
+    + Sau khi đọc scenario và xem thông tin thị trường, người chơi chọn một trong ba hành động:
 
-  - **Buy**;
+        **Buy**;
 
-  - **Sell**;
+        **Sell**;
 
-  - **Hold**.
-
-- Đây là input chính thể hiện cách người chơi phản ứng với tình huống thị trường.
+        **Hold**.
+    + Đây là input chính thể hiện cách người chơi phản ứng với tình huống thị trường.
 
 <!-- -->
 
