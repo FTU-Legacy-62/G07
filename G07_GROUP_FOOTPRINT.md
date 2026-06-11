@@ -267,9 +267,9 @@ Sản phẩm xử lý input của người chơi theo một quy trình lặp qua
 
 <!-- -->
 
-Sau mỗi round, hệ thống lưu decision history, trading result và bias signals vào session state. Sau 8 rounds, hệ thống tổng hợp điểm bias và tính Rationality Score:  
+    Sau mỗi round, hệ thống lưu decision history, trading result và bias signals vào session state. Sau 8 rounds, hệ thống tổng hợp điểm bias và tính Rationality Score:  
       Rationality_Score = max(0, round(100 × (1 - total_bias_score / MAX_BIAS)))  
-Cuối game, người chơi nhận được final dashboard gồm portfolio result, total return, bias summary, rationality score và feedback ngắn.
+    Cuối game, người chơi nhận được final dashboard gồm portfolio result, total return, bias summary, rationality score và feedback ngắn.
 
 <!-- -->
 
