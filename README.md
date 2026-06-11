@@ -49,8 +49,7 @@ Họ có thể dùng sản phẩm trong lớp học, buổi demo nhóm, hoạt �
 
 ## Cách mở hoặc chạy sản phẩm
 
-Cách 1: Nhóm khyến nghị người chơi sử dụng cách này
-
+Cách 1: Chạy qua VSCode
 Có thể chạy sản phẩm trực tiếp từ repo bằng Streamlit theo các bước sau:
 
 1. Mở repo của nhóm trên GitHub.
