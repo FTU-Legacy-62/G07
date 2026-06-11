@@ -19,11 +19,11 @@ Mỗi thành viên cần có một mục riêng theo mẫu dưới đây.
 
 - **Team leader**
 <!-- -->
-  Điều phối công việc chung của nhóm.
+    Điều phối công việc chung của nhóm.
 
-  Theo dõi tiến độ và đảm bảo các phần của sản phẩm được phát triển theo cùng một định hướng.
+    Theo dõi tiến độ và đảm bảo các phần của sản phẩm được phát triển theo cùng một định hướng.
 
-  Giữ vai trò kết nối giữa các thành viên để sản phẩm cuối không bị rời rạc giữa các module.
+    Giữ vai trò kết nối giữa các thành viên để sản phẩm cuối không bị rời rạc giữa các module.
 <!-- -->
 - **App backbone và module integration**
 <!-- -->
