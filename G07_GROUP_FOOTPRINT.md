@@ -305,7 +305,7 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Giới thiệu game, bối cảnh mô phỏng và cho phép người chơi nhập tên để bắt đầu.
+    Giới thiệu game, bối cảnh mô phỏng và cho phép người chơi nhập tên để bắt đầu.
 
 <!-- -->
 
@@ -313,9 +313,9 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Hiển thị thông tin của từng round, gồm giá cổ phiếu STEELSTOX, bối cảnh thị trường, tin tức, fundamentals, tín hiệu đám đông và biểu đồ giá.
+    Hiển thị thông tin của từng round, gồm giá cổ phiếu STEELSTOX, bối cảnh thị trường, tin tức, fundamentals, tín hiệu đám đông và biểu đồ giá.
 
-- Hiển thị trạng thái danh mục hiện tại như cash, số cổ phiếu, portfolio value và return.
+    Hiển thị trạng thái danh mục hiện tại như cash, số cổ phiếu, portfolio value và return.
 
 <!-- -->
 
@@ -323,11 +323,11 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Cho phép người chơi chọn Buy, Sell hoặc Hold.
+    Cho phép người chơi chọn Buy, Sell hoặc Hold.
 
-- Nếu chọn Buy hoặc Sell, người chơi chọn thêm khối lượng giao dịch.
+    Nếu chọn Buy hoặc Sell, người chơi chọn thêm khối lượng giao dịch.
 
-- Sau đó, hệ thống hiển thị Decision Checkpoint để tóm tắt quyết định và yêu cầu người chơi trả lời câu hỏi ngắn trước khi xác nhận.
+    Sau đó, hệ thống hiển thị Decision Checkpoint để tóm tắt quyết định và yêu cầu người chơi trả lời câu hỏi ngắn trước khi xác nhận.
 
 <!-- -->
 
@@ -335,9 +335,9 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Sau khi quyết định được xác nhận, hệ thống mô phỏng biến động thị trường và hiển thị kết quả round.
+    Sau khi quyết định được xác nhận, hệ thống mô phỏng biến động thị trường và hiển thị kết quả round.
 
-- Kết quả gồm giá cổ phiếu sau biến động, Week P&L, portfolio value mới và giải thích ngắn về diễn biến thị trường.
+    Kết quả gồm giá cổ phiếu sau biến động, Week P&L, portfolio value mới và giải thích ngắn về diễn biến thị trường.
 
 <!-- -->
 
@@ -345,9 +345,9 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Sản phẩm lưu lại các quyết định của người chơi qua từng round, gồm hành động, trade size, giá, số cổ phiếu, cash, portfolio value và return.
+    Sản phẩm lưu lại các quyết định của người chơi qua từng round, gồm hành động, trade size, giá, số cổ phiếu, cash, portfolio value và return.
 
-- Phần này giúp người chơi nhìn lại quá trình ra quyết định của mình.
+    Phần này giúp người chơi nhìn lại quá trình ra quyết định của mình.
 
 <!-- -->
 
@@ -355,9 +355,9 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Sau 8 rounds, hệ thống hiển thị kết quả cuối game, gồm final portfolio value, total return, total bias score và rationality score.
+    Sau 8 rounds, hệ thống hiển thị kết quả cuối game, gồm final portfolio value, total return, total bias score và rationality score.
 
-- Sản phẩm cũng hiển thị biểu đồ tổng kết như portfolio chart, bias chart và leaderboard.
+    Sản phẩm cũng hiển thị biểu đồ tổng kết như portfolio chart, bias chart và leaderboard.
 
 <!-- -->
 
@@ -365,9 +365,9 @@ Sản phẩm tạo ra các output chính theo trình tự trải nghiệm của 
 
 <!-- -->
 
-- Hệ thống tổng hợp các bias xuất hiện trong quá trình chơi, ví dụ Overconfidence, Herding, Availability Bias, Framing Bias, Loss Aversion và Disposition Effect.
+    Hệ thống tổng hợp các bias xuất hiện trong quá trình chơi, ví dụ Overconfidence, Herding, Availability Bias, Framing Bias, Loss Aversion và Disposition Effect.
 
-- Mỗi bias được phân loại theo mức độ từ None đến Very Strong, kèm giải thích ngắn, bằng chứng từ các round và gợi ý cải thiện.
+    Mỗi bias được phân loại theo mức độ từ None đến Very Strong, kèm giải thích ngắn, bằng chứng từ các round và gợi ý cải thiện.
 
 ## **Các lựa chọn thiết kế quan trọng** 
 
@@ -377,9 +377,9 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Nhóm chọn một cổ phiếu duy nhất thay vì nhiều tài sản để giữ game đơn giản và dễ kiểm soát, giúp người chơi tập trung vào quá trình ra quyết định, thay vì bị phân tán bởi quá nhiều mã cổ phiếu hoặc nhiều loại tài sản khác nhau.
+    Nhóm chọn một cổ phiếu duy nhất thay vì nhiều tài sản để giữ game đơn giản và dễ kiểm soát, giúp người chơi tập trung vào quá trình ra quyết định, thay vì bị phân tán bởi quá nhiều mã cổ phiếu hoặc nhiều loại tài sản khác nhau.
 
-- Cách làm này cũng phù hợp với phạm vi môn học và thời gian phát triển sản phẩm.
+    Cách làm này cũng phù hợp với phạm vi môn học và thời gian phát triển sản phẩm.
 
 <!-- -->
 
@@ -387,11 +387,11 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Các scenario được chuẩn bị trước để nhóm có thể kiểm soát nội dung, bối cảnh và mục tiêu học tập của từng round.
+    Các scenario được chuẩn bị trước để nhóm có thể kiểm soát nội dung, bối cảnh và mục tiêu học tập của từng round.
 
-- Điều này giúp hệ thống dễ test hơn và giúp bias detection hoạt động rõ ràng hơn.
+    Điều này giúp hệ thống dễ test hơn và giúp bias detection hoạt động rõ ràng hơn.
 
-- Nếu dùng dữ liệu real-time, game có thể thực tế hơn nhưng sẽ khó kiểm soát, khó giải thích và khó đảm bảo mỗi tình huống đều phục vụ đúng mục tiêu phát hiện bias.
+    Nếu dùng dữ liệu real-time, game có thể thực tế hơn nhưng sẽ khó kiểm soát, khó giải thích và khó đảm bảo mỗi tình huống đều phục vụ đúng mục tiêu phát hiện bias.
 
 <!-- -->
 
@@ -399,13 +399,13 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Nhóm không để các scenario xuất hiện theo thứ tự cố định.
+    Nhóm không để các scenario xuất hiện theo thứ tự cố định.
 
-- Ở mỗi lượt chơi, hệ thống trộn ngẫu nhiên thứ tự các rounds.
+    Ở mỗi lượt chơi, hệ thống trộn ngẫu nhiên thứ tự các rounds.
 
-- Lựa chọn này giúp game có tính replay cao hơn, vì người chơi có thể chơi lại mà không gặp đúng cùng một trình tự tình huống.
+    Lựa chọn này giúp game có tính replay cao hơn, vì người chơi có thể chơi lại mà không gặp đúng cùng một trình tự tình huống.
 
-- Điều này cũng giảm khả năng người chơi học thuộc thứ tự round và làm cho trải nghiệm chơi lại tự nhiên hơn.
+    Điều này cũng giảm khả năng người chơi học thuộc thứ tự round và làm cho trải nghiệm chơi lại tự nhiên hơn.
 
 <!-- -->
 
@@ -413,11 +413,11 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Người chơi không chỉ chọn Buy hoặc Sell, mà còn phải chọn mức độ giao dịch.
+    Người chơi không chỉ chọn Buy hoặc Sell, mà còn phải chọn mức độ giao dịch.
 
-- Trade size giúp thể hiện mức độ rủi ro mà người chơi sẵn sàng chấp nhận.
+    Trade size giúp thể hiện mức độ rủi ro mà người chơi sẵn sàng chấp nhận.
 
-- Hai người có thể cùng chọn Buy, nhưng một người mua ít và một người mua gần như toàn bộ cash sẽ phản ánh mức độ phản ứng khác nhau trước cùng một scenario.
+    Hai người có thể cùng chọn Buy, nhưng một người mua ít và một người mua gần như toàn bộ cash sẽ phản ánh mức độ phản ứng khác nhau trước cùng một scenario.
 
 <!-- -->
 
@@ -425,11 +425,11 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Nhóm chọn rule-based logic thay vì mô hình AI phức tạp.
+    Nhóm chọn rule-based logic thay vì mô hình AI phức tạp.
 
-- Cách này phù hợp với mục tiêu vì logic dễ hiểu, dễ kiểm tra và dễ giải thích
+    Cách này phù hợp với mục tiêu vì logic dễ hiểu, dễ kiểm tra và dễ giải thích
 
-- Mỗi bias được gắn với một số điều kiện cụ thể, giúp nhóm có thể giải thích vì sao hệ thống ghi nhận bias đó ở người chơi.
+    Mỗi bias được gắn với một số điều kiện cụ thể, giúp nhóm có thể giải thích vì sao hệ thống ghi nhận bias đó ở người chơi.
 
 <!-- -->
 
@@ -437,17 +437,17 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 <!-- -->
 
-- Python/Streamlit đủ đơn giản để nhóm phát triển sản phẩm trong phạm vi môn học.
+    Python/Streamlit đủ đơn giản để nhóm phát triển sản phẩm trong phạm vi môn học.
 
-- Công cụ này vẫn cho phép nhóm kết nối các phần quan trọng như scenario data, Data Manager, app flow, trading logic, bias rules, scoring và final dashboard.
+    Công cụ này vẫn cho phép nhóm kết nối các phần quan trọng như scenario data, Data Manager, app flow, trading logic, bias rules, scoring và final dashboard.
 
-- Nhờ đó, nhóm có thể tạo ra một bản demo chạy được, dễ trình bày và dễ kiểm tra.
+    Nhờ đó, nhóm có thể tạo ra một bản demo chạy được, dễ trình bày và dễ kiểm tra.
 
 ## **Điểm nhóm thấy làm tốt)**
 
 1.  **Mô phỏng cơ chế khớp lệnh sát thực tế và quản lý tốt sai số**
 
-> **N**hóm đã xử lý khá tốt bài toán sai số thập phân (floating-point inaccuracy) thường gặp. Thay vì nhân tỷ lệ % đơn thuần, thuật toán áp dụng làm tròn xuống (math.floor) để mô phỏng giao dịch **cổ phiếu nguyên lô**. Điều này giúp hạn chế tối đa rủi ro tiền thực mua vượt quá số dư thực tế, duy trì sự ổn định cho các phép tính tài chính của game.
+> Nhóm đã xử lý khá tốt bài toán sai số thập phân (floating-point inaccuracy) thường gặp. Thay vì nhân tỷ lệ % đơn thuần, thuật toán áp dụng làm tròn xuống (math.floor) để mô phỏng giao dịch **cổ phiếu nguyên lô**. Điều này giúp hạn chế tối đa rủi ro tiền thực mua vượt quá số dư thực tế, duy trì sự ổn định cho các phép tính tài chính của game.
 
 2.  Hệ thống scoring không đánh giá bias chỉ dựa trên lựa chọn đơn giản như **Buy / Sell / Hold**,
 
@@ -471,7 +471,7 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
 **6 Scenario design tốt và hỗ trợ đúng mục tiêu**
 
-Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, kết hợp giá cổ phiếu, tin tức, fundamentals và tín hiệu đám đông để người chơi phải cân nhắc trước khi ra quyết định. Các scenario cũng được liên kết với những bias chính của game, giúp phần bias detection có cơ sở rõ hơn. Ngoài ra, việc randomize thứ tự rounds làm trải nghiệm chơi lại bớt lặp và tự nhiên hơn.
+> Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, kết hợp giá cổ phiếu, tin tức, fundamentals và tín hiệu đám đông để người chơi phải cân nhắc trước khi ra quyết định. Các scenario cũng được liên kết với những bias chính của game, giúp phần bias detection có cơ sở rõ hơn. Ngoài ra, việc randomize thứ tự rounds làm trải nghiệm chơi lại bớt lặp và tự nhiên hơn.
 
 ## **Hạn chế hiện tại** 
 
@@ -489,13 +489,13 @@ Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, k�
 
 <!-- -->
 
-- Người dùng mục tiêu là sinh viên mới học tài chính, nên sản phẩm phải đủ đơn giản để dễ chơi, nhưng vẫn phải đủ logic để thể hiện được các bias.Và các bias nên là những bias mà sinh viên dễ mắc phải
+ Người dùng mục tiêu là sinh viên mới học tài chính, nên sản phẩm phải đủ đơn giản để dễ chơi, nhưng vẫn phải đủ logic để thể hiện được các bias.Và các bias nên là những bias mà sinh viên dễ mắc phải
 
-- Ban đầu, nhóm dự định đưa nhiều behavioral biases hơn vào game để sản phẩm có vẻ đầy đủ hơn về mặt lý thuyết.
+ Ban đầu, nhóm dự định đưa nhiều behavioral biases hơn vào game để sản phẩm có vẻ đầy đủ hơn về mặt lý thuyết.
 
-- Tuy nhiên, sau nhiều lần trao đổi và cân nhắc, nhóm nhận ra rằng nếu đưa quá nhiều bias, game sẽ khó thiết kế scenario, khó viết rule rõ ràng và khó giải thích kết quả cho người chơi.
+ Tuy nhiên, sau nhiều lần trao đổi và cân nhắc, nhóm nhận ra rằng nếu đưa quá nhiều bias, game sẽ khó thiết kế scenario, khó viết rule rõ ràng và khó giải thích kết quả cho người chơi.
 
-- Vì vậy, nhóm quyết định tập trung vào các bias phổ biến và dễ quan sát trong hành vi đầu tư của người mới, Đây cũng là những bias mà bản thân các thành viên trong nhóm từng gặp
+ Vì vậy, nhóm quyết định tập trung vào các bias phổ biến và dễ quan sát trong hành vi đầu tư của người mới, Đây cũng là những bias mà bản thân các thành viên trong nhóm từng gặp
 
 <!-- -->
 
@@ -503,11 +503,11 @@ Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, k�
 
 <!-- -->
 
-- Nhóm học được rằng một game tài chính cần có flow mạch lạc để người chơi hiểu mình đang làm gì ở từng bước.
+ Nhóm học được rằng một game tài chính cần có flow mạch lạc để người chơi hiểu mình đang làm gì ở từng bước.
 
-- Flow cuối cùng được xây dựng theo hướng: người chơi đọc scenario, xem danh mục, chọn Buy/Sell/Hold, trả lời câu hỏi để confirm decision, sau đó hệ thống mới xử lý giao dịch và hiển thị kết quả của round.
+ Flow cuối cùng được xây dựng theo hướng: người chơi đọc scenario, xem danh mục, chọn Buy/Sell/Hold, trả lời câu hỏi để confirm decision, sau đó hệ thống mới xử lý giao dịch và hiển thị kết quả của round.
 
-- Nhóm cũng học được rằng việc randomize thứ tự các rounds giúp game có tính replay cao hơn và tránh cảm giác mỗi lượt chơi đều giống nhau.
+ Nhóm cũng học được rằng việc randomize thứ tự các rounds giúp game có tính replay cao hơn và tránh cảm giác mỗi lượt chơi đều giống nhau.
 
 <!-- -->
 
@@ -515,11 +515,11 @@ Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, k�
 
 <!-- -->
 
-- Một bài học lớn là các khái niệm trong behavioral finance khi đưa thành các bộ rule thì cần rất cẩn thận.
+ Một bài học lớn là các khái niệm trong behavioral finance khi đưa thành các bộ rule thì cần rất cẩn thận.
 
-- Khi đưa vào sản phẩm, mỗi bias phải được chuyển thành điều kiện rõ ràng, ví dụ khi nào được xem là lỗ lớn, khi nào hành động Hold có thể liên quan đến loss aversion, hoặc khi nào việc Sell một khoản lời nhỏ có thể liên quan đến disposition effect.
+ Khi đưa vào sản phẩm, mỗi bias phải được chuyển thành điều kiện rõ ràng, ví dụ khi nào được xem là lỗ lớn, khi nào hành động Hold có thể liên quan đến loss aversion, hoặc khi nào việc Sell một khoản lời nhỏ có thể liên quan đến disposition effect.
 
-- Vì vậy, việc xây dựng logic cần có rule rõ ràng, biến rõ ràng và phải được test nhiều lần qua nhiều trường hợp khác nhau.
+ Vì vậy, việc xây dựng logic cần có rule rõ ràng, biến rõ ràng và phải được test nhiều lần qua nhiều trường hợp khác nhau.
 
 <!-- -->
 
@@ -527,11 +527,11 @@ Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, k�
 
 <!-- -->
 
-- Trong quá trình làm, nhóm nhiều lần bị chậm hơn kế hoạch ban đầu vì code lỗi hoặc rule chưa hoạt động đúng.
+ Trong quá trình làm, nhóm nhiều lần bị chậm hơn kế hoạch ban đầu vì code lỗi hoặc rule chưa hoạt động đúng.
 
-- Có lúc bias rule chưa detect được bias như dự kiến, hoặc trading rule hiển thị nhầm return, khiến kết quả không phản ánh đúng quyết định của người chơi.
+ Có lúc bias rule chưa detect được bias như dự kiến, hoặc trading rule hiển thị nhầm return, khiến kết quả không phản ánh đúng quyết định của người chơi.
 
-- Những lỗi này giúp nhóm nhận ra rằng một sản phẩm chạy được chưa chắc đã đúng..
+ Những lỗi này giúp nhóm nhận ra rằng một sản phẩm chạy được chưa chắc đã đúng..
 
 <!-- -->
 
@@ -539,15 +539,15 @@ Nhóm thiết kế các scenario có bối cảnh thị trường rõ ràng, k�
 
 <!-- -->
 
-- Ban đầu, các thành viên chưa thực sự hiểu toàn bộ game. Mỗi người chủ yếu hiểu phần mình phụ trách, ví dụ scenario, UI, trading logic, bias detection hoặc app flow.
+ Ban đầu, các thành viên chưa thực sự hiểu toàn bộ game. Mỗi người chủ yếu hiểu phần mình phụ trách, ví dụ scenario, UI, trading logic, bias detection hoặc app flow.
 
-- Điều này làm cho việc tích hợp ban đầu khá khó, vì một module thay đổi có thể ảnh hưởng đến module khác.
+ Điều này làm cho việc tích hợp ban đầu khá khó, vì một module thay đổi có thể ảnh hưởng đến module khác.
 
-- Sau nhiều lần họp nhóm và trao đổi liên tục, các thành viên bắt đầu hiểu rõ hơn mối quan hệ giữa phần việc của mình và phần việc của người khác.
+ Sau nhiều lần họp nhóm và trao đổi liên tục, các thành viên bắt đầu hiểu rõ hơn mối quan hệ giữa phần việc của mình và phần việc của người khác.
 
-- Khi mọi người hiểu được game như một hệ thống chung, việc sửa lỗi và hoàn thiện sản phẩm trở nên nhanh hơn.
+ Khi mọi người hiểu được game như một hệ thống chung, việc sửa lỗi và hoàn thiện sản phẩm trở nên nhanh hơn.
 
-- Nhóm học được rằng làm việc nhóm không chỉ là chia việc, mà còn là đảm bảo mọi người hiểu cách phần việc của mình kết nối với sản phẩm cuối.
+ Nhóm học được rằng làm việc nhóm không chỉ là chia việc, mà còn là đảm bảo mọi người hiểu cách phần việc của mình kết nối với sản phẩm cuối.
 
 ## **Gợi ý cho khóa sau - Cả nhóm (1-2 idea)**
 
