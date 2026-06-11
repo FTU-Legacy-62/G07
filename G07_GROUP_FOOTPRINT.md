@@ -549,7 +549,7 @@ Nhóm có một số lựa chọn thiết kế quan trọng khi xây dựng sả
 
  Nhóm học được rằng làm việc nhóm không chỉ là chia việc, mà còn là đảm bảo mọi người hiểu cách phần việc của mình kết nối với sản phẩm cuối.
 
-## **Gợi ý cho khóa sau - Cả nhóm (1-2 idea)**
+## **Gợi ý cho khóa sau**
 
 Nếu sinh viên khóa sau muốn tiếp tục hoặc học từ sản phẩm này, nhóm muốn nhắn gì?
 
