@@ -85,9 +85,9 @@ Mỗi thành viên cần có một mục riêng theo mẫu dưới đây.
 <!-- -->
 - **Phụ trách Data Manager module**
 <!-- -->
-  Data Manager module là một dấu ấn quan trọng của em trong sản phẩm.
+      Data Manager module là một dấu ấn quan trọng của em trong sản phẩm.
 
-  Module này giúp quản lý cách scenario data được đọc, xử lý và đưa vào từng round. Nó cũng hỗ trợ randomize thứ tự các rounds, giúp mỗi lượt chơi có trình tự scenario khác nhau.
+      Module này giúp quản lý cách scenario data được đọc, xử lý và đưa vào từng round. Nó cũng hỗ trợ randomize thứ tự các rounds, giúp mỗi lượt chơi có trình tự scenario khác nhau.
 
   Nhờ đó, dữ liệu scenario được sử dụng đúng trong app flow và kết nối tốt hơn với các phần như bias detection, checkpoint question và final dashboard
 .<!-- -->
