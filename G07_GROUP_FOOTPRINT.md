@@ -198,60 +198,82 @@ Sản phẩm xử lý input của người chơi theo một quy trình lặp qua
 
 <!-- -->
 
-+ Ở mỗi round, hệ thống hiển thị scenario, giá hiện tại của cổ phiếu STEELSTOX, tín hiệu thị trường, thông tin đám đông và trạng thái danh mục hiện tại. Sau đó, người chơi chọn:
+ - Ở mỗi round, hệ thống hiển thị scenario, giá hiện tại của cổ phiếu STEELSTOX, tín hiệu thị trường, thông tin đám đông và trạng thái danh mục hiện tại. Sau đó, người chơi chọn:
 
-  - Hành động: **Buy, Sell hoặc Hold**;
+   + Hành động: **Buy, Sell hoặc Hold**;
 
-  - Trade size: **25%, 50%, 75% hoặc 100%** nếu có giao dịch
+   + Trade size: **25%, 50%, 75% hoặc 100%** nếu có giao dịch
 
-    + Trước khi quyết định được xác nhận, người chơi phải trả lời một câu hỏi ngắn liên quan đến scenario hoặc kiến thức tài chính. Sau khi trả lời, hệ thống mới confirm decision và xử lý round.
+ - Trước khi quyết định được xác nhận, người chơi phải trả lời một câu hỏi ngắn liên quan đến scenario hoặc kiến thức tài chính. Sau khi trả lời, hệ thống mới confirm decision và xử lý round.
+
+<!-- -->
 
 - **2. Kiểm tra và xử lý giao dịch**
+
+<!-- -->
+
   **Nếu người chơi chọn Buy, hệ thống dùng một phần cash để mua cổ phiếu**:
-  target_cash = cash_before × size_pct  
-  shares_bought = floor(target_cash / price_now)  
-  cash_after = cash_before - (shares_bought × price_now)
+      target_cash = cash_before × size_pct  
+      shares_bought = floor(target_cash / price_now)  
+      cash_after = cash_before - (shares_bought × price_now)
 
 **Nếu người chơi mua thêm cổ phiếu, hệ thống cập nhật giá vốn bình quân**  
-new_avg_cost = ((shares_before × avg_cost_before) + (shares_bought × price_now)) / (shares_before + shares_bought)
+    new_avg_cost = ((shares_before × avg_cost_before) + (shares_bought × price_now)) / (shares_before + shares_bought)
 
 **Nếu người chơi chọn Sell, hệ thống bán một phần số cổ phiếu đang nắm giữ**
-shares_sold = floor(shares_before × size_pct)
+    shares_sold = floor(shares_before × size_pct)
 
 **Nếu người chơi bán toàn bộ vị thế,** hệ thống đặt shares_sold = shares_before và đưa avg_cost = 0.0 để tránh lỗi tính toán ở các round sau.
 
-Nếu người chơi chọn **Hold**, hệ thống không thay đổi cash và shares.
+**Nếu người chơi chọn **Hold****, hệ thống không thay đổi cash và shares.
 
-- **3. Cập nhật danh mục đầu tư** 
-  **Sau khi xử lý giao dịch, hệ thống cập nhật các biến chính như cash, shares, avg_cost, portfolio_value, round_return, total_return và unrealized_return.
+<!-- -->
 
-> Giá trị danh mục được tính bằng:  
-> portfolio_value = cash_after + (shares_after × price_now)
->
-> Tổng lợi nhuận được tính bằng:  
-> total_return = (portfolio_value - initial_capital) / initial_capital
->
-> Lợi nhuận của vị thế cổ phiếu đang nắm giữ được tính bằng:  
-> unrealized_return = (price_now - avg_cost_before) / avg_cost_before
+- **3. Cập nhật danh mục đầu tư**
 
-- **4. Kiểm tra bias** 
-  **Sau khi cập nhật danh mục, hệ thống dùng quyết định của người chơi, trade size, trạng thái lãi/lỗ, scenario context, crowd signal và decision history để kiểm tra các bias.  
+<!-- -->
+
+- Sau khi xử lý giao dịch, hệ thống cập nhật các biến chính như: **cash, shares, avg_cost, portfolio_value, round_return, total_return và unrealized_return**.
+
+- **Giá trị danh mục được tính bằng:**  
+    portfolio_value = cash_after + (shares_after × price_now)
+
+- **Tổng lợi nhuận được tính bằng:** 
+    total_return = (portfolio_value - initial_capital) / initial_capital
+  
+- **Lợi nhuận của vị thế cổ phiếu đang nắm giữ được tính bằng:**
+    unrealized_return = (price_now - avg_cost_before) / avg_cost_before
+
+<!-- -->
+
+- **4. Kiểm tra bias**
+
+<!-- -->
+
+- Sau khi cập nhật danh mục, hệ thống dùng quyết định của người chơi, trade size, trạng thái lãi/lỗ, scenario context, crowd signal và decision history để kiểm tra các bias.  
   Ví dụ, hệ thống có thể ghi nhận:
 
-  - **Herding** nếu người chơi đi theo đám đông khi tín hiệu cơ bản chưa đủ mạnh;
+      **Herding** nếu người chơi đi theo đám đông khi tín hiệu cơ bản chưa đủ mạnh;
 
-  - **Loss aversion** nếu người chơi tiếp tục giữ hoặc mua thêm khi đang lỗ trong bối cảnh tín hiệu xấu;
+      **Loss aversion** nếu người chơi tiếp tục giữ hoặc mua thêm khi đang lỗ trong bối cảnh tín hiệu xấu;
 
-  - **Disposition effect** nếu người chơi bán vị thế đang lời quá sớm hoặc giữ vị thế đang lỗ quá lâu;
+      **Disposition effect** nếu người chơi bán vị thế đang lời quá sớm hoặc giữ vị thế đang lỗ quá lâu;
 
-  - **Overconfidence** nếu người chơi giao dịch quá mạnh sau kết quả tốt hoặc trong bối cảnh rủi ro.
+       **Overconfidence** nếu người chơi giao dịch quá mạnh sau kết quả tốt hoặc trong bối cảnh rủi ro.
 
-> Để tránh tính điểm trùng, hệ thống dùng cơ chế **anti-double-counting**: các rule có ý nghĩa giống nhau được gom vào cùng một cụm và mỗi cụm chỉ được tính một lần trong một round.
+- Để tránh tính điểm trùng, hệ thống dùng cơ chế **anti-double-counting**: các rule có ý nghĩa giống nhau được gom vào cùng một cụm và mỗi cụm chỉ được tính một lần trong một round.
 
-- **5. Lưu kết quả và tính điểm cuối game**  
-  **Sau mỗi round, hệ thống lưu decision history, trading result và bias signals vào session state. Sau 8 rounds, hệ thống tổng hợp điểm bias và tính Rationality Score:  
-  Rationality_Score = max(0, round(100 × (1 - total_bias_score / MAX_BIAS)))  
-  Cuối game, người chơi nhận được final dashboard gồm portfolio result, total return, bias summary, rationality score và feedback ngắn.
+<!-- -->
+
+- **5. Lưu kết quả và tính điểm cuối game**
+
+<!-- -->
+
+- Sau mỗi round, hệ thống lưu decision history, trading result và bias signals vào session state. Sau 8 rounds, hệ thống tổng hợp điểm bias và tính Rationality Score:  
+      Rationality_Score = max(0, round(100 × (1 - total_bias_score / MAX_BIAS)))  
+- Cuối game, người chơi nhận được final dashboard gồm portfolio result, total return, bias summary, rationality score và feedback ngắn.
+
+<!-- -->
 
 ## **User flow** 
 
