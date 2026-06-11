@@ -290,153 +290,153 @@ Bên cạnh đó, quy tắc tính portfolio return và stockholding return cũng
 
 ### Những việc đã thực sự làm
 
-1. Logic tài chính và portfolio
+1. **Logic tài chính và portfolio**
 
-- Đổi toàn bộ đơn vị tiền sang USD.
+        - Đổi toàn bộ đơn vị tiền sang USD.
+        
+        - Game bắt đầu với 100,000 USD.
+        
+        - Shares được chuyển sang số nguyên, không còn mua ra số thập phân.
+        
+        - Khi Buy 100% mà còn dư cash nhỏ không đủ mua 1 cổ phiếu, hệ thống sẽ không cho chọn Buy tiếp.
+        
+        - Tách rõ 2 loại return:
+        
+        - unrealized_return: return của cổ phiếu đang nắm giữ.
+        
+        - portfolio_return: return tổng của toàn bộ portfolio.
+        
+        - unrealized_return được dùng cho các bias như Loss Aversion và Disposition Effect để chính xác hơn.
 
-- Game bắt đầu với 100,000 USD.
+2. **Bias detection**
 
-- Shares được chuyển sang số nguyên, không còn mua ra số thập phân.
+        - Loss Aversion và Disposition Effect được chỉnh về ngưỡng lỗ 7%.
+        
+        - Loss Aversion giờ trigger khi người chơi giữ vị thế đang lỗ trên 7%.
+        
+        - Disposition Effect giờ nhận diện tốt hơn các hành vi:
+        
+        - bán winner nhỏ quá sớm,
+        
+        - giữ loser quá lâu,
+        
+        - bán winner khi signal vẫn còn tốt.
+        
+        - Sửa false positive: nếu bán winner nhỏ nhưng fundamental/news đang xấu thật thì không tính là Disposition.
+        
+        - Herding được kiểm lại để chỉ trigger khi:
+        
+        - crowd signal mạnh,
+        
+        - người chơi đi theo crowd,
+        
+        - fundamental không support rõ ràng.
+        
+        - Availability, Framing, Overconfidence cũng được kiểm tra lại qua log để đảm bảo trigger hợp lý hơn.
 
-- Khi Buy 100% mà còn dư cash nhỏ không đủ mua 1 cổ phiếu, hệ thống sẽ không cho chọn Buy tiếp.
+3. **Scenario content**
 
-- Tách rõ 2 loại return:
+        - Xóa các mô tả liên quan đến “Vietnam” để scenario trung tính hơn.
+        
+        - Cập nhật nhiều phần news, fundamentals, forum/crowd sentiment, outcome.
+        
+        - Round 2 được chỉnh lại để có:
+        
+        - crowd_direction = sell,
+        
+        - crowd_strength = 4,
+        
+        - news_sentiment = positive,
+        
+        - fundamental_signal = good.
+        
+        - Herding scenario G2 được set đúng biến:
+        
+        - positive news,
+        
+        - neutral fundamentals,
+        
+        - crowd buy rất mạnh,
+        
+        - outcome giảm.
+        
+        - Các scenario giờ có độ mâu thuẫn tốt hơn giữa news, fundamentals, crowd và outcome.
 
-- unrealized_return: return của cổ phiếu đang nắm giữ.
+4. **UI và chart**
 
-- portfolio_return: return tổng của toàn bộ portfolio.
+        - Chart được làm lại theo hướng giống TradingView hơn:
+        
+        - candlestick rõ hơn,
+        
+        - nền trắng,
+        
+        - trục giá bên phải,
+        
+        - có pan/zoom,
+        
+        - bỏ moving averages,
+        
+        - bỏ dòng OHLC và “Random Walk Simulation”.
+        
+        - Mỗi round có 7 candlestick đại diện cho 7 ngày.
+        
+        - Đổi tên chart từ VN-STOCK - HOSE thành STEELSTOX - FOMOPOLY.
+        
+        - Portfolio panel được thiết kế lại thành 3 box chính:
+        
+        - Cash,
+        
+        - Stock Value / Total Cost,
+        
+        - Portfolio Value.
+        
+        - Unrealized return và Portfolio return được đưa thành dòng nhỏ dưới box liên quan.
+        
+        - Thêm tooltip chữ i để giải thích cách tính các chỉ số.
+        
+        - Sửa QnA box thành nền trắng, text rõ trên Streamlit Cloud.
+        
+        - Bỏ box Portfolio Return dư ở outcome.
 
-- unrealized_return được dùng cho các bias như Loss Aversion và Disposition Effect để chính xác hơn.
+5. **Scoring và grading**
 
-2. Bias detection
-
-- Loss Aversion và Disposition Effect được chỉnh về ngưỡng lỗ 7%.
-
-- Loss Aversion giờ trigger khi người chơi giữ vị thế đang lỗ trên 7%.
-
-- Disposition Effect giờ nhận diện tốt hơn các hành vi:
-
-- bán winner nhỏ quá sớm,
-
-- giữ loser quá lâu,
-
-- bán winner khi signal vẫn còn tốt.
-
-- Sửa false positive: nếu bán winner nhỏ nhưng fundamental/news đang xấu thật thì không tính là Disposition.
-
-- Herding được kiểm lại để chỉ trigger khi:
-
-- crowd signal mạnh,
-
-- người chơi đi theo crowd,
-
-- fundamental không support rõ ràng.
-
-- Availability, Framing, Overconfidence cũng được kiểm tra lại qua log để đảm bảo trigger hợp lý hơn.
-
-3. Scenario content
-
-- Xóa các mô tả liên quan đến “Vietnam” để scenario trung tính hơn.
-
-- Cập nhật nhiều phần news, fundamentals, forum/crowd sentiment, outcome.
-
-- Round 2 được chỉnh lại để có:
-
-- crowd_direction = sell,
-
-- crowd_strength = 4,
-
-- news_sentiment = positive,
-
-- fundamental_signal = good.
-
-- Herding scenario G2 được set đúng biến:
-
-- positive news,
-
-- neutral fundamentals,
-
-- crowd buy rất mạnh,
-
-- outcome giảm.
-
-- Các scenario giờ có độ mâu thuẫn tốt hơn giữa news, fundamentals, crowd và outcome.
-
-4. UI và chart
-
-- Chart được làm lại theo hướng giống TradingView hơn:
-
-- candlestick rõ hơn,
-
-- nền trắng,
-
-- trục giá bên phải,
-
-- có pan/zoom,
-
-- bỏ moving averages,
-
-- bỏ dòng OHLC và “Random Walk Simulation”.
-
-- Mỗi round có 7 candlestick đại diện cho 7 ngày.
-
-- Đổi tên chart từ VN-STOCK - HOSE thành STEELSTOX - FOMOPOLY.
-
-- Portfolio panel được thiết kế lại thành 3 box chính:
-
-- Cash,
-
-- Stock Value / Total Cost,
-
-- Portfolio Value.
-
-- Unrealized return và Portfolio return được đưa thành dòng nhỏ dưới box liên quan.
-
-- Thêm tooltip chữ i để giải thích cách tính các chỉ số.
-
-- Sửa QnA box thành nền trắng, text rõ trên Streamlit Cloud.
-
-- Bỏ box Portfolio Return dư ở outcome.
-
-5. Scoring và grading
-
-- Rationality Score được làm lại để không còn trường hợp full hold/cash vẫn được 80 điểm.
-
-- Thêm participation logic: người chơi cần thật sự tham gia quyết định, không thể né game.
-
-- Full hold toàn game bị cap điểm thấp hơn.
-
-- Nếu vừa lỗ vừa có bias score cao thì bị phạt thêm.
-
-- Scale Rationality Score hiện dùng tiếng Anh:
-
-- Poor: dưới 65,
-
-- Average: 65-79,
-
-- Good: từ 80 trở lên.
-
-- Thêm thanh màu đỏ/vàng/xanh cho Rationality Score.
+        - Rationality Score được làm lại để không còn trường hợp full hold/cash vẫn được 80 điểm.
+        
+        - Thêm participation logic: người chơi cần thật sự tham gia quyết định, không thể né game.
+        
+        - Full hold toàn game bị cap điểm thấp hơn.
+        
+        - Nếu vừa lỗ vừa có bias score cao thì bị phạt thêm.
+        
+        - Scale Rationality Score hiện dùng tiếng Anh:
+        
+        - Poor: dưới 65,
+        
+        - Average: 65-79,
+        
+        - Good: từ 80 trở lên.
+        
+        - Thêm thanh màu đỏ/vàng/xanh cho Rationality Score.
 
 ### File, tính năng, dữ liệu, logic, giao diện, tài liệu hoặc phần demo đã đóng góp
 
-Đóng góp lớn (<80%):
-
-bias _rule.py
-
-Đóng góp mang tính hỗ trợ (<20%):
-
-scoring.py
-
-ui_components.py
-
-app.py
-
-charts.py
-
-config.py
-
-trading_logic.py
+        Đóng góp lớn (<80%):
+        
+        bias _rule.py
+        
+        Đóng góp mang tính hỗ trợ (<20%):
+        
+        scoring.py
+        
+        ui_components.py
+        
+        app.py
+        
+        charts.py
+        
+        config.py
+        
+        trading_logic.py
 
 ### Bằng chứng đóng góp
 
