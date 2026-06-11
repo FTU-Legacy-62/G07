@@ -66,23 +66,23 @@ Mỗi thành viên cần có một mục riêng theo mẫu dưới đây.
       Lập và rà soát các Key Common Variables trong project plan để cả nhóm dùng chung một hệ biến. Việc này giúp giảm sai lệch khi ghép các module lại với nhau, đặc biệt giữa trading logic, bias detection, scoring và UI.
 <!-- -->
 - **Xây dựng flow chính của game**
+<!-- -->
+        Đóng góp vào việc thiết kế luồng chơi chính:
 
-> Đóng góp vào việc thiết kế luồng chơi chính:
+            người chơi đọc scenario;
 
-- người chơi đọc scenario;
+            đưa ra quyết định Buy/Sell/Hold;
+            
+            trả lời checkpoint question để xác nhận quyết định;
+            
+            hệ thống xử lý giao dịch;
+            
+            kết quả của round được hiển thị;
+            
+            người chơi tiếp tục sang round tiếp theo hoặc xem final dashboard.
 
-- đưa ra quyết định Buy/Sell/Hold;
-
-- trả lời checkpoint question để xác nhận quyết định;
-
-- hệ thống xử lý giao dịch;
-
-- kết quả của round được hiển thị;
-
-- người chơi tiếp tục sang round tiếp theo hoặc xem final dashboard.
-
-- Flow này giúp trải nghiệm chơi rõ ràng hơn và giúp người chơi hiểu mình đang ở bước nào trong quá trình ra quyết định.
-
+            Flow này giúp trải nghiệm chơi rõ ràng hơn và giúp người chơi hiểu mình đang ở bước nào trong quá trình ra quyết định.
+<!-- -->
 - **Phụ trách Data Manager module**
 <!-- -->
   Data Manager module là một dấu ấn quan trọng của em trong sản phẩm.
