@@ -124,11 +124,11 @@ Mỗi thành viên cần có một mục riêng theo mẫu dưới đây.
 
 - File **config.py**
 
-- Project plan, đặc biệt các sheet “key common variable”, “team task”, “flow”, “python module”
+- Project plan, đặc biệt các sheet “key common variable”, “team task”, “flow”, “python module”: https://drive.google.com/drive/u/1/folders/1N7NPLdLUQ0BDlnllMNbMJn6wJmszvz8M
+ 
+- Bản game chạy được theo flow: nhập tên → đọc scenario → chọn Buy/Sell/Hold → trả lời checkpoint question → confirm decision → xem kết quả round → chơi round tiếp theo → xem final dashboard. 
 
-- Bản game chạy được theo flow: nhập tên → đọc scenario → chọn Buy/Sell/Hold → trả lời checkpoint question → confirm decision → xem kết quả round → chơi round tiếp theo → xem final dashboard.
-
-- Ảnh màn hình thể hiện phần việc test logic
+- Ảnh màn hình thể hiện phần việc test logic: https://drive.google.com/drive/u/1/folders/1N7NPLdLUQ0BDlnllMNbMJn6wJmszvz8M
 
 ### Phần đóng góp đó kết nối thế nào với sản phẩm cuối cùng
 
