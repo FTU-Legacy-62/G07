@@ -14,58 +14,57 @@ Nhóm cần nộp bản cứng của individual footprint.
 
 Mỗi thành viên cần có một mục riêng theo mẫu dưới đây.
 
-## Thành viên 1: Họ tên và mã sinh viên
-
+## Thành viên 1: Vương Huy Hoàng
 ### Vai trò trong dự án
 
 - **Team leader**
+<!-- -->
+  Điều phối công việc chung của nhóm.
 
-- Điều phối công việc chung của nhóm.
+  Theo dõi tiến độ và đảm bảo các phần của sản phẩm được phát triển theo cùng một định hướng.
 
-- Theo dõi tiến độ và đảm bảo các phần của sản phẩm được phát triển theo cùng một định hướng.
-
-- Giữ vai trò kết nối giữa các thành viên để sản phẩm cuối không bị rời rạc giữa các module.
-
+  Giữ vai trò kết nối giữa các thành viên để sản phẩm cuối không bị rời rạc giữa các module.
+<!-- -->
 - **App backbone và module integration**
+<!-- -->
+  Phụ trách xây dựng và kiểm soát luồng chính của game.
 
-- Phụ trách xây dựng và kiểm soát luồng chính của game.
-
-- Đảm bảo các bước trong game được kết nối mạch lạc, Kết nối các phần như scenario data, UI, trading logic, bias detection, scoring và dashboard thành một game hoàn chỉnh.
-
+  Đảm bảo các bước trong game được kết nối mạch lạc, Kết nối các phần như scenario data, UI, trading logic, bias detection, scoring và dashboard thành một game hoàn chỉnh.
+<!-- -->
 - **Data Manager module**
+<!-- -->
+  Phụ trách phần quản lý dữ liệu scenario.
 
-- Phụ trách phần quản lý dữ liệu scenario.
+  Đảm bảo dữ liệu được đọc, xử lý và đưa vào từng round đúng cách.
 
-- Đảm bảo dữ liệu được đọc, xử lý và đưa vào từng round đúng cách.
-
-- Hỗ trợ việc randomize thứ tự các rounds và đảm bảo scenario data khớp với app flow.
-
+  Hỗ trợ việc randomize thứ tự các rounds và đảm bảo scenario data khớp với app flow.
+<!-- -->
 - **Testing logic của game**
-
-- Tham gia kiểm tra logic của sản phẩm, đặc biệt là **bias detection logic**.
-
+<!-- -->
+  Tham gia kiểm tra logic của sản phẩm, đặc biệt là **bias detection logic**.
+<!-- -->
 - **Lập Project plan**
+<!-- -->
+  Hỗ trợ cập nhật và theo dõi tiến độ của nhóm.
 
-- Hỗ trợ cập nhật và theo dõi tiến độ của nhóm.
+  Đặc biệt phụ trách chuẩn hóa phần **Key Common Variables** trong Project Plan.
 
-- Đặc biệt phụ trách chuẩn hóa phần **Key Common Variables** trong Project Plan.
-
-- Đảm bảo các biến quan trọng trong code, dữ liệu và tài liệu được sử dụng thống nhất, giúp sản phẩm dễ hiểu và dễ demo hơn..
-
+  Đảm bảo các biến quan trọng trong code, dữ liệu và tài liệu được sử dụng thống nhất, giúp sản phẩm dễ hiểu và dễ demo hơn..
+<!-- -->
 ### Dấu ấn cá nhân trong sản phẩm
 
 Dấu ấn cá nhân rõ nhất của em thể hiện ở ba phần chính:
 
 - **Kết nối các module thành một flow chơi hoàn chỉnh**
+<!-- -->
+  Tham gia kết nối các phần riêng lẻ như scenario data, UI, trading logic, bias rules, scoring và final dashboard. Thay vì để các module hoạt động rời rạc, em giúp sắp xếp chúng theo một flow thống nhất để game có thể chạy từ đầu đến cuối.
 
-  - Tham gia kết nối các phần riêng lẻ như scenario data, UI, trading logic, bias rules, scoring và final dashboard. Thay vì để các module hoạt động rời rạc, em giúp sắp xếp chúng theo một flow thống nhất để game có thể chạy từ đầu đến cuối.
-
-  - Điều này giúp sản phẩm cuối hoạt động như một game hoàn chỉnh, không chỉ là tập hợp các file code riêng lẻ.
-
+  Điều này giúp sản phẩm cuối hoạt động như một game hoàn chỉnh, không chỉ là tập hợp các file code riêng lẻ.
+<!-- -->
 - **Thiết lập Key Common Variables để thống nhất logic giữa các thành viên**
-
-  - Lập và rà soát các Key Common Variables trong project plan để cả nhóm dùng chung một hệ biến. Việc này giúp giảm sai lệch khi ghép các module lại với nhau, đặc biệt giữa trading logic, bias detection, scoring và UI.
-
+<!-- -->
+  Lập và rà soát các Key Common Variables trong project plan để cả nhóm dùng chung một hệ biến. Việc này giúp giảm sai lệch khi ghép các module lại với nhau, đặc biệt giữa trading logic, bias detection, scoring và UI.
+<!-- -->
 - **Xây dựng flow chính của game**
 
 > Đóng góp vào việc thiết kế luồng chơi chính:
@@ -85,13 +84,13 @@ Dấu ấn cá nhân rõ nhất của em thể hiện ở ba phần chính:
 - Flow này giúp trải nghiệm chơi rõ ràng hơn và giúp người chơi hiểu mình đang ở bước nào trong quá trình ra quyết định.
 
 - **Phụ trách Data Manager module**
+<!-- -->
+  Data Manager module là một dấu ấn quan trọng của em trong sản phẩm.
 
-  - Data Manager module là một dấu ấn quan trọng của em trong sản phẩm.
+  Module này giúp quản lý cách scenario data được đọc, xử lý và đưa vào từng round. Nó cũng hỗ trợ randomize thứ tự các rounds, giúp mỗi lượt chơi có trình tự scenario khác nhau.
 
-  - Module này giúp quản lý cách scenario data được đọc, xử lý và đưa vào từng round. Nó cũng hỗ trợ randomize thứ tự các rounds, giúp mỗi lượt chơi có trình tự scenario khác nhau.
-
-  - Nhờ đó, dữ liệu scenario được sử dụng đúng trong app flow và kết nối tốt hơn với các phần như bias detection, checkpoint question và final dashboard
-.
+  Nhờ đó, dữ liệu scenario được sử dụng đúng trong app flow và kết nối tốt hơn với các phần như bias detection, checkpoint question và final dashboard
+.<!-- -->
 
 ### Những việc đã thực sự làm
 
