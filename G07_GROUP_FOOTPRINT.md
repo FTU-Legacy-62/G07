@@ -12,9 +12,9 @@ G07
 
 https://github.com/FTU-Legacy-62/G07
 
-## **Link demo**
+## **Link demo (đã deploy từ github)** 
 
-[bit.ly/3RR5kJQ](https://bit.ly/3RR5kJQ)
+https://g07-fomopoly.streamlit.app/
 
 ## **Vấn đề nhóm muốn giải quyết** 
 
