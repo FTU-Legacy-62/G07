@@ -98,7 +98,7 @@ def _format_trade_size(value):
         "small": "Small",
         "medium": "Medium",
         "high": "High",
-        "all_in": "All in",
+        "all_in": "All",
     }.get(str(value), str(value).replace("_", " ").title())
 
 
