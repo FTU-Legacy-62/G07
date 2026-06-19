@@ -49,7 +49,7 @@ Họ có thể dùng sản phẩm trong lớp học, buổi demo nhóm, hoạt �
 
 ## Cách mở hoặc chạy sản phẩm
 
-Cách 1: Chạy qua VSCode, không qua GITHUB
+**Cách 1: Chạy qua VSCode, không qua GITHUB**
 Làm theo các bước sau:
 
 1. Mở repo của nhóm trên GitHub.
@@ -74,7 +74,7 @@ pip install streamlit pandas numpy matplotlib
 streamlit run app.py
 ```
 
-Cách 2: người chơi có thể mở trực tiếp game qua GITHUB bằng cách nhập link sau: https://g07-fomopoly.streamlit.app/
+**Cách 2: người chơi có thể mở trực tiếp game qua GITHUB bằng cách nhập link sau**: https://g07-fomopoly.streamlit.app/
 
 ## Link demo nếu có: https://g07-fomopoly.streamlit.app/
 => Đây là link đã deploy trực tiếp từ GITHUB
