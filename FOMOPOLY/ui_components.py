@@ -11,7 +11,7 @@ import streamlit as st
 
 from config import (
     COLOR_DANGER,
-    COLOR_SUCCESS,FOMOPOLY/
+    COLOR_SUCCESS,
     STARTING_CAPITAL,
     TRADE_SIZE_LABELS,
     TRADE_SIZE_MAP,
